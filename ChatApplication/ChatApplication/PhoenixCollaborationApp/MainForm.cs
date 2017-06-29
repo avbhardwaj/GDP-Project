@@ -19,7 +19,8 @@ namespace PhoenixCollaborationApp
 
 		private void bunifuImageButton1_Click(object sender, EventArgs e)
 		{
-			Environment.Exit(0);
+			this.Close();
+			//Environment.Exit(0);
 		}
 
 		private void bunifuImageButton2_Click(object sender, EventArgs e)
@@ -64,17 +65,25 @@ namespace PhoenixCollaborationApp
 
 		private void bunifuImageButton5_Click(object sender, EventArgs e)
 		{
+			//Collapsed Left Side Menu
 			if (leftSideMenu.Width == 50)
 			{
-				
+				leftSideMenu.Visible = false;
 				leftSideMenu.Width = 250;
-				logo.Visible = true;
+				sidePanelAnimator.ShowSync(leftSideMenu);
+				sidePanelAnimator.AnimationType= BunifuAnimatorNS.AnimationType.Mosaic;
+				logoAnimator.ShowSync(logo);
 			}
 
+			//Expanded Left Side Menu
 			else
 			{
-				logo.Visible = false;
+				logoAnimator.Hide(logo);
+				leftSideMenu.Visible = false;
 				leftSideMenu.Width = 50;
+				sidePanelAnimator.ShowSync(leftSideMenu);
+				sidePanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+				
 			}
 		}
 	}
