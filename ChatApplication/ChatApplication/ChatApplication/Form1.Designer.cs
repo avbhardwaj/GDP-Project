@@ -105,7 +105,7 @@
 			this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
 			this.bunifuImageButton1.ImageActive = null;
-			this.bunifuImageButton1.Location = new System.Drawing.Point(203, 12);
+			this.bunifuImageButton1.Location = new System.Drawing.Point(203, 19);
 			this.bunifuImageButton1.Name = "bunifuImageButton1";
 			this.bunifuImageButton1.Size = new System.Drawing.Size(25, 25);
 			this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,7 +118,7 @@
 			this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
 			this.bunifuImageButton2.ImageActive = null;
-			this.bunifuImageButton2.Location = new System.Drawing.Point(242, 12);
+			this.bunifuImageButton2.Location = new System.Drawing.Point(242, 19);
 			this.bunifuImageButton2.Name = "bunifuImageButton2";
 			this.bunifuImageButton2.Size = new System.Drawing.Size(25, 25);
 			this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
