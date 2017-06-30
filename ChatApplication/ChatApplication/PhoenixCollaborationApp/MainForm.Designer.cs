@@ -587,7 +587,7 @@
 			// 
 			// sidePanelAnimator
 			// 
-			this.sidePanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
+			this.sidePanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Rotate;
 			this.sidePanelAnimator.Cursor = null;
 			animation1.AnimateOnlyDifferences = true;
 			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -596,14 +596,14 @@
 			animation1.MinTime = 0F;
 			animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
 			animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-			animation1.MosaicSize = 20;
-			animation1.Padding = new System.Windows.Forms.Padding(30);
-			animation1.RotateCoeff = 0F;
+			animation1.MosaicSize = 0;
+			animation1.Padding = new System.Windows.Forms.Padding(50);
+			animation1.RotateCoeff = 1F;
 			animation1.RotateLimit = 0F;
 			animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
 			animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
 			animation1.TimeCoeff = 0F;
-			animation1.TransparencyCoeff = 0F;
+			animation1.TransparencyCoeff = 1F;
 			this.sidePanelAnimator.DefaultAnimation = animation1;
 			// 
 			// MainForm

@@ -71,7 +71,7 @@ namespace PhoenixCollaborationApp
 				leftSideMenu.Visible = false;
 				leftSideMenu.Width = 250;
 				sidePanelAnimator.ShowSync(leftSideMenu);
-				sidePanelAnimator.AnimationType= BunifuAnimatorNS.AnimationType.Mosaic;
+				sidePanelAnimator.AnimationType= BunifuAnimatorNS.AnimationType.Rotate;
 				logoAnimator.ShowSync(logo);
 			}
 
