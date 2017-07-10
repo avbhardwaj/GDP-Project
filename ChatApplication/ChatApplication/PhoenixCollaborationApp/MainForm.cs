@@ -26,6 +26,7 @@ namespace PhoenixCollaborationApp
 		private void bunifuImageButton2_Click(object sender, EventArgs e)
 		{
 			this.WindowState = FormWindowState.Maximized;
+			
 		}
 
 		private void bunifuImageButton3_Click(object sender, EventArgs e)
@@ -85,6 +86,22 @@ namespace PhoenixCollaborationApp
 				sidePanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
 				
 			}
+		}
+
+		private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
+		{
+			
+		
+		}
+
+		private void bunifuFlatButton3_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void bunifuFlatButton4_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
