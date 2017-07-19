@@ -1,32 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PhoenixCollaborationApp
 {
 	public partial class MainForm : Form
 	{
+		Chat c1;
+		GoogleSuite g1;
+		SharedCalendar sc1;
+		TaskManagement tm1;
 		public MainForm()
 		{
+			c1 = new Chat();
+			g1 = new GoogleSuite();
+			sc1 = new SharedCalendar();
+			tm1 = new TaskManagement();
 			InitializeComponent();
+			
 		}
 
 		private void bunifuImageButton1_Click(object sender, EventArgs e)
 		{
 			this.Close();
-			//Environment.Exit(0);
+			
 		}
 
 		private void bunifuImageButton2_Click(object sender, EventArgs e)
 		{
 			this.WindowState = FormWindowState.Maximized;
 			
+
+
 		}
 
 		private void bunifuImageButton3_Click(object sender, EventArgs e)
@@ -49,14 +53,29 @@ namespace PhoenixCollaborationApp
 
 		}
 
-		private void bunifuFlatButton5_Click(object sender, EventArgs e)
+		private void taskManagementButton_Click(object sender, EventArgs e)
 		{
+			if (!displayViewPanel.Controls.Contains(TaskManagement.Instance))
+			{
+				displayViewPanel.Controls.Add(TaskManagement.Instance);
+				TaskManagement.Instance.Dock = DockStyle.Fill;
+				TaskManagement.Instance.BringToFront();
+			}
+			else
+				TaskManagement.Instance.BringToFront();
 
 		}
 
-		private void bunifuFlatButton2_Click(object sender, EventArgs e)
+		private void calendarButton_Click(object sender, EventArgs e)
 		{
-
+			if (!displayViewPanel.Controls.Contains(SharedCalendar.Instance))
+			{
+				displayViewPanel.Controls.Add(SharedCalendar.Instance);
+				SharedCalendar.Instance.Dock = DockStyle.Fill;
+				SharedCalendar.Instance.BringToFront();
+			}
+			else
+				SharedCalendar.Instance.BringToFront();
 		}
 
 		private void bunifuCustomLabel4_Click(object sender, EventArgs e)
@@ -78,7 +97,7 @@ namespace PhoenixCollaborationApp
 
 			//Expanded Left Side Menu
 			else
-			{
+			{ 
 				logoAnimator.Hide(logo);
 				leftSideMenu.Visible = false;
 				leftSideMenu.Width = 50;
@@ -87,11 +106,19 @@ namespace PhoenixCollaborationApp
 				
 			}
 		}
-
-		private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
-		{
-			
 		
+		private void chatButton_Click(object sender, EventArgs e)
+		{	
+			// Displays the view of Chat when the button is clicked
+			if (!displayViewPanel.Controls.Contains(Chat.Instance))
+			{
+				displayViewPanel.Controls.Add(Chat.Instance);
+				Chat.Instance.Dock = DockStyle.Fill;
+				Chat.Instance.BringToFront();
+			}
+			else
+				Chat.Instance.BringToFront();
+
 		}
 
 		private void bunifuFlatButton3_Click(object sender, EventArgs e)
@@ -99,14 +126,26 @@ namespace PhoenixCollaborationApp
 
 		}
 
-		private void bunifuFlatButton4_Click(object sender, EventArgs e)
+		private void googleSuiteButton_Click(object sender, EventArgs e)
+		{
+			if (!displayViewPanel.Controls.Contains(GoogleSuite.Instance))
+			{
+				displayViewPanel.Controls.Add(GoogleSuite.Instance);
+				GoogleSuite.Instance.Dock = DockStyle.Fill;
+				GoogleSuite.Instance.BringToFront();
+			}
+			else
+				GoogleSuite.Instance.BringToFront();
+		}
+
+		private void bunifuCustomLabel5_Click(object sender, EventArgs e)
 		{
 
 		}
 
-		private void panel1_Paint(object sender, PaintEventArgs e)
+		private void displayViewPanel_Paint(object sender, PaintEventArgs e)
 		{
-
+			
 		}
 	}
 }

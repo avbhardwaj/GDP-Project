@@ -50,11 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChatForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Chat.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChatForm.Designer.cs">
-      <DependentUpon>ChatForm.cs</DependentUpon>
+    <Compile Include="Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleSuite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GoogleSuite.Designer.cs">
+      <DependentUpon>GoogleSuite.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -64,8 +70,23 @@
     </Compile>
     <Compile Include="MainController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ChatForm.resx">
-      <DependentUpon>ChatForm.cs</DependentUpon>
+    <Compile Include="SharedCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SharedCalendar.Designer.cs">
+      <DependentUpon>SharedCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskManagement.Designer.cs">
+      <DependentUpon>TaskManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoogleSuite.resx">
+      <DependentUpon>GoogleSuite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -79,6 +100,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SharedCalendar.resx">
+      <DependentUpon>SharedCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskManagement.resx">
+      <DependentUpon>TaskManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApplication", "ChatApplication\ChatApplication.csproj", "{6048DF01-5F41-41FF-83C0-F6CA3F9CB5F3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixCollaborationApp", "PhoenixCollaborationApp\PhoenixCollaborationApp.csproj", "{2B47B3A7-E29D-45D2-9172-8141E4293EFD}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6048DF01-5F41-41FF-83C0-F6CA3F9CB5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6048DF01-5F41-41FF-83C0-F6CA3F9CB5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6048DF01-5F41-41FF-83C0-F6CA3F9CB5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6048DF01-5F41-41FF-83C0-F6CA3F9CB5F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2B47B3A7-E29D-45D2-9172-8141E4293EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2B47B3A7-E29D-45D2-9172-8141E4293EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B47B3A7-E29D-45D2-9172-8141E4293EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
