@@ -19,23 +19,39 @@ namespace PhoenixCollaborationApp
 			
 		}
 
-		private void bunifuImageButton1_Click(object sender, EventArgs e)
+		private void closeBtn_Click(object sender, EventArgs e)
 		{
 			this.Close();
 			
 		}
 
-		private void bunifuImageButton2_Click(object sender, EventArgs e)
+		private void maximizeBtn_Click(object sender, EventArgs e)
 		{
-			this.WindowState = FormWindowState.Maximized;
-			
+			if (WindowState == FormWindowState.Normal)
+			{
+				WindowState = FormWindowState.Maximized;
+			}
 
+			else if (WindowState == FormWindowState.Maximized)
+			{
+				WindowState = FormWindowState.Normal;
+			}
 
 		}
 
-		private void bunifuImageButton3_Click(object sender, EventArgs e)
+		private void minimizeBtn_Click(object sender, EventArgs e)
 		{
-			this.WindowState = FormWindowState.Minimized;
+			//this.WindowState = FormWindowState.Minimized;
+			if (WindowState == FormWindowState.Normal)
+			{
+				WindowState = FormWindowState.Minimized;
+			}
+
+			else if (WindowState == FormWindowState.Maximized)
+			{
+				WindowState = FormWindowState.Normal;
+			}
+
 		}
 
 		private void bunifuCustomLabel2_Click(object sender, EventArgs e)
