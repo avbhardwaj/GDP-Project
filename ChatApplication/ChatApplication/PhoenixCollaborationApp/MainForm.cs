@@ -22,7 +22,7 @@ namespace PhoenixCollaborationApp
 		private void closeBtn_Click(object sender, EventArgs e)
 		{
 			this.Close();
-			
+		
 		}
 
 		private void maximizeBtn_Click(object sender, EventArgs e)
