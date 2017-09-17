@@ -9,7 +9,8 @@ namespace PhoenixCollaborationApp
 		GoogleSuite g1;
 		SharedCalendar sc1;
 		TaskManagement tm1;
-		public MainForm()
+        //designation.Text = 
+        public MainForm()
 		{
 			c1 = new Chat();
 			g1 = new GoogleSuite();
@@ -163,5 +164,5 @@ namespace PhoenixCollaborationApp
 		{
 			
 		}
-	}
+    }
 }

@@ -78,14 +78,21 @@ namespace PhoenixCollaborationApp
                     SqlDataAdapter adpt = new SqlDataAdapter(q1);
                     DataSet ds = new DataSet();
                     adpt.Fill(ds);
-                    conn.Close();
-
+                   
                     int count = ds.Tables[0].Rows.Count;
                     if (count == 1)
                     {
                         MessageBox.Show("Successfully Logged-in");
                         this.Hide();
+                        SqlCommand q2 = new SqlCommand("select ID from Users where NAME=@username and PASSWORD=@password", conn);
+                        q2.Parameters.AddWithValue("@username", textBox3.Text);
+                        q2.Parameters.AddWithValue("@password", textBox4.Text);
+                        SqlDataAdapter ad = new SqlDataAdapter(q2);
+                        DataSet ds2 = new DataSet();
+                        conn.Close();
+
                         ob.Show();
+
                     }
                     else
                     {
