@@ -112,5 +112,37 @@ namespace PhoenixCollaborationApp
         {
 
         }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void maximizeBtn_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+
+            else if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+   
+        private void minimizeBtn_Click_1(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Minimized;
+            }
+
+            else if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
     }
 }
