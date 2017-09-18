@@ -15,12 +15,14 @@ namespace PhoenixCollaborationApp
         public Form1()
         {
             InitializeComponent();
-            textBox4.PasswordChar = '*';
+            password1.PasswordChar = '*';
         }
 
         // string conn = "Data Source=vineeth.cblh3csuj0ih.us-east-2.rds.amazonaws.com;Initial Catalog=Phoenix_Users;Integrated Security=true";
         MainForm ob = new MainForm();
-       
+        
+
+        Form2 change_pwd = new Form2();
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -58,10 +60,11 @@ namespace PhoenixCollaborationApp
             
             try
             {
-                if (textBox3.Text == "" && textBox4.Text == "")
+                if (username1.Text == "" || password1.Text == "")
                 {
                     MessageBox.Show("Please enter Username and Password, Thank you!");
                 }
+               
                 else
                 {
                     SqlConnection conn = new SqlConnection();
@@ -72,8 +75,8 @@ namespace PhoenixCollaborationApp
                     "Password=vineethgajula;";
                     conn.Open();
                     SqlCommand q1 = new SqlCommand("select * from Users where NAME=@username and PASSWORD=@password", conn);
-                    q1.Parameters.AddWithValue("@username", textBox3.Text);
-                    q1.Parameters.AddWithValue("@password", textBox4.Text);
+                    q1.Parameters.AddWithValue("@username", username1.Text);
+                    q1.Parameters.AddWithValue("@password", password1.Text);
                     //sql.Open();
                     SqlDataAdapter adpt = new SqlDataAdapter(q1);
                     DataSet ds = new DataSet();
@@ -84,13 +87,7 @@ namespace PhoenixCollaborationApp
                     {
                         MessageBox.Show("Successfully Logged-in");
                         this.Hide();
-                        SqlCommand q2 = new SqlCommand("select ID from Users where NAME=@username and PASSWORD=@password", conn);
-                        q2.Parameters.AddWithValue("@username", textBox3.Text);
-                        q2.Parameters.AddWithValue("@password", textBox4.Text);
-                        SqlDataAdapter ad = new SqlDataAdapter(q2);
-                        DataSet ds2 = new DataSet();
                         conn.Close();
-
                         ob.Show();
 
                     }
@@ -143,6 +140,24 @@ namespace PhoenixCollaborationApp
             {
                 WindowState = FormWindowState.Normal;
             }
+        }
+
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            change_pwd.Show();
+
         }
     }
 }

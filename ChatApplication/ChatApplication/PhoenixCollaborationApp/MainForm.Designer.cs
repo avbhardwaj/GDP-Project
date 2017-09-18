@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.TitleBar = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -68,6 +68,7 @@
             this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.displayViewPanel = new System.Windows.Forms.Panel();
             this.sidePanelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.TitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maximizeBtn)).BeginInit();
@@ -401,6 +402,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.bunifuVTrackbar1);
             this.panel2.Controls.Add(this.bunifuCustomLabel10);
             this.panel2.Controls.Add(this.bunifuCustomLabel13);
@@ -463,9 +465,9 @@
             this.bunifuCustomLabel13.Location = new System.Drawing.Point(10, 343);
             this.bunifuCustomLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
-            this.bunifuCustomLabel13.Size = new System.Drawing.Size(101, 17);
+            this.bunifuCustomLabel13.Size = new System.Drawing.Size(133, 17);
             this.bunifuCustomLabel13.TabIndex = 17;
-            this.bunifuCustomLabel13.Text = "Vineeth Gajula";
+            this.bunifuCustomLabel13.Text = "Bhardwaj Avasarala";
             // 
             // bunifuCustomLabel12
             // 
@@ -685,22 +687,22 @@
             // 
             this.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind;
             this.logoAnimator.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.logoAnimator.DefaultAnimation = animation2;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.logoAnimator.DefaultAnimation = animation3;
             // 
             // displayViewPanel
             // 
@@ -721,22 +723,35 @@
             // 
             this.sidePanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Rotate;
             this.sidePanelAnimator.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(50);
-            animation1.RotateCoeff = 1F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.sidePanelAnimator.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(50);
+            animation4.RotateCoeff = 1F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 1F;
+            this.sidePanelAnimator.DefaultAnimation = animation4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.logoAnimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.sidePanelAnimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(39, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 16);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Vineeth Gajula";
             // 
             // MainForm
             // 
@@ -812,6 +827,7 @@
 		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
 		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
 		private System.Windows.Forms.Panel panel4;
-	}
+        private System.Windows.Forms.Label label1;
+    }
 }
 

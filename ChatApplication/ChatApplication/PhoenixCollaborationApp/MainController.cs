@@ -16,7 +16,9 @@ namespace PhoenixCollaborationApp
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+            Form1 login_page = new Form1();
+            Application.Run(new Form1());
 		}
-	}
+       
+    }
 }
