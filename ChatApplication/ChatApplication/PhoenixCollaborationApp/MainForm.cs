@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Amazon.WorkDocs;
 
 namespace PhoenixCollaborationApp
 {
@@ -151,7 +152,13 @@ namespace PhoenixCollaborationApp
 				GoogleSuite.Instance.BringToFront();
 			}
 			else
+			{
 				GoogleSuite.Instance.BringToFront();
+				//AmazonWorkDocsConfig config = new AmazonWorkDocsConfig();
+				//config.AuthenticationServiceName = "Lanja Dengai";
+				//config.ServiceURL = "";
+			
+			}
 		}
 
 		private void bunifuCustomLabel5_Click(object sender, EventArgs e)
