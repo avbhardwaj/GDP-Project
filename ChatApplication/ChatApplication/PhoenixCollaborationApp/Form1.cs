@@ -18,9 +18,9 @@ namespace PhoenixCollaborationApp
             InitializeComponent();
             
         }
-		
-        
-        MainForm ob = new MainForm();
+
+		forgotPassForm fm = new forgotPassForm();
+		MainForm ob = new MainForm();
 		string jsonURL = "https://aws-phoenix.s3-us-west-2.amazonaws.com/Data.json?AWSAccessKeyId=AKIAIMD627FG7CHA6SYQ&Expires=1514786340&Signature=DbrgDMcW6DiUNQO5fJXVtsHM6s0%3D";
 		//string jsonURL = "https://s3-us-west-2.amazonaws.com/aws-phoenix/Data.json";
 		static string bucketName = "aws-phoenix";
@@ -153,6 +153,17 @@ namespace PhoenixCollaborationApp
 		private void leftSideMenu_Paint(object sender, PaintEventArgs e)
 		{
 
+		}
+
+		private void bunifuTileButton1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void forgotPass_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			fm.Show();
 		}
 	}
 }

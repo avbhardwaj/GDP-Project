@@ -10,7 +10,8 @@ namespace PhoenixCollaborationApp
 		GoogleSuite g1;
 		SharedCalendar sc1;
 		TaskManagement tm1;
-		public MainForm()
+        //designation.Text = 
+        public MainForm()
 		{
 			c1 = new Chat();
 			g1 = new GoogleSuite();
@@ -23,7 +24,8 @@ namespace PhoenixCollaborationApp
 		private void closeBtn_Click(object sender, EventArgs e)
 		{
 			this.Close();
-			
+           
+		
 		}
 
 		private void maximizeBtn_Click(object sender, EventArgs e)
@@ -170,5 +172,5 @@ namespace PhoenixCollaborationApp
 		{
 			
 		}
-	}
+    }
 }

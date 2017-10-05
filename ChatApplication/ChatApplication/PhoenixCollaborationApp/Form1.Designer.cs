@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
-			BunifuAnimatorNS.Animation animation9 = new BunifuAnimatorNS.Animation();
+			BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			BunifuAnimatorNS.Animation animation10 = new BunifuAnimatorNS.Animation();
+			BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
@@ -54,6 +54,7 @@
 			this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
 			this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
 			this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+			this.forgotPass = new Bunifu.Framework.UI.BunifuCustomLabel();
 			((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
 			this.TitleBar.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.minimizeBtn)).BeginInit();
@@ -121,22 +122,22 @@
 			// 
 			this.sidePanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Rotate;
 			this.sidePanelAnimator.Cursor = null;
-			animation9.AnimateOnlyDifferences = true;
-			animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
-			animation9.LeafCoeff = 0F;
-			animation9.MaxTime = 1F;
-			animation9.MinTime = 0F;
-			animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
-			animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
-			animation9.MosaicSize = 0;
-			animation9.Padding = new System.Windows.Forms.Padding(50);
-			animation9.RotateCoeff = 1F;
-			animation9.RotateLimit = 0F;
-			animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
-			animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
-			animation9.TimeCoeff = 0F;
-			animation9.TransparencyCoeff = 1F;
-			this.sidePanelAnimator.DefaultAnimation = animation9;
+			animation3.AnimateOnlyDifferences = true;
+			animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+			animation3.LeafCoeff = 0F;
+			animation3.MaxTime = 1F;
+			animation3.MinTime = 0F;
+			animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+			animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+			animation3.MosaicSize = 0;
+			animation3.Padding = new System.Windows.Forms.Padding(50);
+			animation3.RotateCoeff = 1F;
+			animation3.RotateLimit = 0F;
+			animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+			animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+			animation3.TimeCoeff = 0F;
+			animation3.TransparencyCoeff = 1F;
+			this.sidePanelAnimator.DefaultAnimation = animation3;
 			// 
 			// logo
 			// 
@@ -284,6 +285,7 @@
 			this.leftSideMenu.AccessibleName = "leftSideMenu";
 			this.leftSideMenu.AutoSize = true;
 			this.leftSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.leftSideMenu.Controls.Add(this.forgotPass);
 			this.leftSideMenu.Controls.Add(this.pwdBtn);
 			this.leftSideMenu.Controls.Add(this.secureLogBtn);
 			this.leftSideMenu.Controls.Add(this.userName);
@@ -383,22 +385,22 @@
 			// 
 			this.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind;
 			this.logoAnimator.Cursor = null;
-			animation10.AnimateOnlyDifferences = true;
-			animation10.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.BlindCoeff")));
-			animation10.LeafCoeff = 0F;
-			animation10.MaxTime = 1F;
-			animation10.MinTime = 0F;
-			animation10.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicCoeff")));
-			animation10.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicShift")));
-			animation10.MosaicSize = 0;
-			animation10.Padding = new System.Windows.Forms.Padding(0);
-			animation10.RotateCoeff = 0F;
-			animation10.RotateLimit = 0F;
-			animation10.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.ScaleCoeff")));
-			animation10.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.SlideCoeff")));
-			animation10.TimeCoeff = 0F;
-			animation10.TransparencyCoeff = 0F;
-			this.logoAnimator.DefaultAnimation = animation10;
+			animation4.AnimateOnlyDifferences = true;
+			animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+			animation4.LeafCoeff = 0F;
+			animation4.MaxTime = 1F;
+			animation4.MinTime = 0F;
+			animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+			animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+			animation4.MosaicSize = 0;
+			animation4.Padding = new System.Windows.Forms.Padding(0);
+			animation4.RotateCoeff = 0F;
+			animation4.RotateLimit = 0F;
+			animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+			animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+			animation4.TimeCoeff = 0F;
+			animation4.TransparencyCoeff = 0F;
+			this.logoAnimator.DefaultAnimation = animation4;
 			// 
 			// bunifuElipse1
 			// 
@@ -411,6 +413,19 @@
 			this.bunifuDragControl1.Horizontal = true;
 			this.bunifuDragControl1.TargetControl = this.TitleBar;
 			this.bunifuDragControl1.Vertical = true;
+			// 
+			// forgotPass
+			// 
+			this.forgotPass.AutoSize = true;
+			this.sidePanelAnimator.SetDecoration(this.forgotPass, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.forgotPass, BunifuAnimatorNS.DecorationType.None);
+			this.forgotPass.ForeColor = System.Drawing.Color.White;
+			this.forgotPass.Location = new System.Drawing.Point(363, 428);
+			this.forgotPass.Name = "forgotPass";
+			this.forgotPass.Size = new System.Drawing.Size(92, 13);
+			this.forgotPass.TabIndex = 12;
+			this.forgotPass.Text = "Forgot Password?";
+			this.forgotPass.Click += new System.EventHandler(this.forgotPass_Click);
 			// 
 			// Form1
 			// 
@@ -439,6 +454,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
 			this.leftSideMenu.ResumeLayout(false);
+			this.leftSideMenu.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -468,5 +484,6 @@
 		private Bunifu.Framework.UI.BunifuImageButton minimizeBtn;
 		private Bunifu.Framework.UI.BunifuImageButton closeBtn;
 		private Bunifu.Framework.UI.BunifuMaterialTextbox pwdBtn;
+		private Bunifu.Framework.UI.BunifuCustomLabel forgotPass;
 	}
 }
